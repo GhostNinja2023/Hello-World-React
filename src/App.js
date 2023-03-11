@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from 'react'; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+// JSX => HTML, JS , 
+
+
+import Button from "./Components/Button";
+
+function App(){
+    
+    let a = 10
+    return(
+         <div>
+            <h1 style={{backgroundColor: "green", color: "white"}}>Anbhav {a} </h1>
+            <p>React</p> 
+            <Button  name="Apple" description="Its an Apple"/>
+            <Button name="Mango" description="Its an Mango"/>
+            <Button name="Banana" description="Its an Banana"/>
+           
+         </div>
+    )
 }
 
+// function Hello2(){
+//     return <h1>Anubhav</h1>
+// }
+
+
 export default App;
+
+// export {Hello1 , Hello2}
+
+
